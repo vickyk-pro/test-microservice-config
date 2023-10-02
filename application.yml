@@ -13,6 +13,8 @@ spring:
 test-prop:
   value: Default_mode
 
+RabitDetais: Normal  
+
 eureka:
   instance:
     prefer-ip-address: true
