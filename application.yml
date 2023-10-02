@@ -1,3 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: TEST1_EUREKA_2
+          uri: lb://TEST1-EUREKA-SERVICE
+          predicates:
+            - Path=/api/v1/test/**, /api/v1/first/**
+        - id: TEST1_EUREKA
+          uri: lb://TEST2-EUREKA-SERVICE
+          predicates:
+            - Path=/api/v1/test2/**
+
 eureka:
   instance:
     prefer-ip-address: true
