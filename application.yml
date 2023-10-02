@@ -10,6 +10,8 @@ spring:
           uri: lb://TEST2-EUREKA-SERVICE
           predicates:
             - Path=/api/v1/test2/**
+test-prop:
+  value: Default_mode
 
 eureka:
   instance:
