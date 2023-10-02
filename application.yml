@@ -13,7 +13,7 @@ spring:
 test-prop:
   value: Default_mode
 
-RabitDetais: Normal  
+RabitDetails: Normal  
 
 eureka:
   instance:
